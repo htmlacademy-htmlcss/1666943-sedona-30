@@ -1,76 +1,76 @@
 /*Fonts*/
 
 @font-face {
-    font-family: "PT Sans";
-    src: url("../fonts/PTSans.woff2") format("woff2"), url("../fonts/PTSans.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
+  font-family: "PT Sans";
+  src: url("../fonts/PTSans.woff2") format("woff2"), url("../fonts/PTSans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "PT Sans";
-    src: url("../fonts/PTSans-Bold.woff2") format("woff2"), url("../fonts/PTSans-Bold.woff") format("woff");
-    font-weight: 700;
-    font-style: normal;
+  font-family: "PT Sans";
+  src: url("../fonts/PTSans-Bold.woff2") format("woff2"), url("../fonts/PTSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
 }
 
 
 /*Variables*/
 
 :root {
-    --basic-white: #ffffff;
-    --basic-white-opacity: rgba(255, 255, 255, 0.9);
-    --basic-blue: #81B3D2;
-    --basic-gray: #eeeeee;
-    --basic-black-gray: #333333;
-    --basic-black: #000000;
-    --basic-brown: #766357;
-    --basic-dark-brown: #604E43;
-    --basic-extra-brown: #503E33;
+  --basic-white: #ffffff;
+  --basic-white-opacity: rgba(255, 255, 255, 0.9);
+  --basic-blue: #81B3D2;
+  --basic-gray: #eeeeee;
+  --basic-black-gray: #333333;
+  --basic-black: #000000;
+  --basic-brown: #766357;
+  --basic-dark-brown: #604E43;
+  --basic-extra-brown: #503E33;
 }
 
 
 /*Global*/
 
 .page-body {
-    min-width: 960px;
-    font-family: PT Sans;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 21px;
-    background-color: var(--basic-white);
+  min-width: 960px;
+  font-family: PT Sans;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: var(--basic-white);
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 
 /*Main navigation*/
 
 .site-navigation {
-    font-size: 14px;
-    line-height: 26px;
-    list-style: none;
-    font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  list-style: none;
+  font-weight: bold;
 }
 
 .site-navigation a {
-    color: var(--basic-black);
+  color: var(--basic-black);
 }
 
 .site-navigation a:hover {
-    color: var(--basic-blue);
+  color: var(--basic-blue);
 }
 
 .site-navigation a:active {
-    color: var(--basic-black);
-    opacity: 0.3;
+  color: var(--basic-black);
+  opacity: 0.3;
 }
 
 .site-navigation a:focus {
@@ -113,12 +113,14 @@ a {
     line-height: 21px;
 }
 
-.recommendation-list {
+.recommendation-item {
   background-color: var(--basic-white);
+  padding: 1px;
 }
 
-.features-list-wrapper {
+.feature-item-gray {
   background-color: var(--basic-gray);
+  padding: 1px;
 }
 
 /*Section search*/
