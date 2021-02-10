@@ -19,14 +19,16 @@
 
 :root {
   --basic-white: #ffffff;
-  --basic-white-opacity: rgba(255, 255, 255, 0.9);
   --basic-blue: #81B3D2;
   --basic-gray: #eeeeee;
   --basic-black-gray: #333333;
   --basic-black: #000000;
   --basic-brown: #766357;
   --basic-dark-brown: #604E43;
-  --basic-extra-brown: #503E33;
+  --basic-extra-brown: #503E33; 
+  
+  --white-opacity: rgba(255, 255, 255, 0.3);
+  --white-more-opacity: rgba(255, 255, 255, 0.9);
 }
 
 
@@ -34,7 +36,7 @@
 
 .page-body {
   min-width: 960px;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 21px;
@@ -83,34 +85,42 @@ a {
   font-size: 21px;
   line-height: 26px;
   text-align: center;
+  font-weight: bold;
 }
 
 /*Section features*/
 
 .features {
   text-align: center;
+  color: var(--basic-black-gray);
 }
 
 .features-p {
   font-size: 14px;
   line-height: 26px;
+  color: var(--basic-black-gray);
 }
 
 .feature-item,
 .recommendation-item {
-    color: black;
-    list-style: none;
+  color: black;
+  list-style: none;
 }
 
 .standout-feature-item {
-    background-color: var(--basic-blue);
-    color: var(--basic-white);
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
 }
 
 .feature-item h3,
 .recommendation-item h3 {
     font-size: 21px;
     line-height: 21px;
+    color: var(--basic-black);
+}
+
+.standout-feature-item h3 {
+  color: var(--basic-white);
 }
 
 .recommendation-item {
@@ -145,6 +155,8 @@ a {
   background-color: var(--basic-brown);
   font-size: 21px;
   line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .button-search:hover {
@@ -152,16 +164,15 @@ a {
   background-color: var(--basic-dark-brown);
 }
 
-.button-search span:active  {
-  color: var(--basic-white);
-  opacity: 0.3;
+.button-search:active  {
+  color: var(--white-opacity);
   background-color: var(--basic-extra-brown);
 }
 
 /*Footer*/
 
 .main-footer {
-  background: var(--basic-white-opacity);
+  background: var(--white-more-opacity);
 }
 
 .footer-contacts a {
