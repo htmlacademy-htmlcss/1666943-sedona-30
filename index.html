@@ -11,12 +11,13 @@
   <title>Sedona</title>
 </head>
 
-<body class="page-body">
-  <header class="main-header container">
+<body class="page-body container">
+  <header class="main-header">
     <nav class="main-navigation">
       <div class="main-header-bar">
         <div class="main-navigation-wrapper">
-          <a href="index.html" class="main-header-logo"><img src="img/logo.svg" width="138" height="70" alt="Логотип туристического городка Седона"></a>
+          <a href="index.html" class="main-header-logo"><img src="img/logo.svg" width="138" height="70"
+              alt="Логотип туристического городка Седона"></a>
           <ul class="site-navigation">
             <li><a href="blank.html">Информация</a></li>
             <li><a href="blank.html">Фото и видео</a></li>
@@ -27,7 +28,7 @@
       </div>
     </nav>
   </header>
-  <main class="container">
+  <main>
     <div class="main-welcome">
       <img src="img/welcome.svg" width="456" height="350" alt="Добро пожаловать в Седону!">
     </div>
@@ -37,34 +38,39 @@
       <h2>Преимущества</h2>
       <p class="features-p">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       <ul class="features-list">
-        <li class="feature-item standout-feature-item feature-item-1">
-          <h3>Настоящий городок</h3>
-          <p>—№1—</p>
-          <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+        <li class="feature-item  feature-item-1">
+          <div class="standout-feature-item standout-feature-item-1">
+            <h3>Настоящий городок</h3>
+            <p>—№1—</p>
+            <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+          </div>
+          <div class="feature-img-1">
+            <img src="img/sedona-1.jpg" width="800" height="256" alt="Вид на городок">
+          </div>
+          <ul class="features-nested-list">
+            <li class="recommendation-item recommendation-item-1">
+              <h3>Жильё</h3>
+              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </li>
+            <li class="recommendation-item recommendation-item-2">
+              <h3>Еда</h3>
+              <p>Всегда заказывайте фирменный бургер. Вы не разочаруетесь!</p>
+            </li>
+            <li class="recommendation-item recommendation-item-3">
+              <h3>Сувениры</h3>
+              <p>Не только китайского, но и местного производства!</p>
+            </li>
+          </ul>
         </li>
-        <div class="feature-img-1">
-          <img src="img/sedona-1.jpg" width="800" height="256" alt="Вид на городок">
-        </div>
-        <li class="recommendation-item recommendation-item-1">
-          <h3>Жильё</h3>
-          <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-        </li>
-        <li class="recommendation-item recommendation-item-2">
-          <h3>Еда</h3>
-          <p>Всегда заказывайте фирменный бургер. Вы не разочаруетесь!</p>
-        </li>
-        <li class="recommendation-item recommendation-item-3">
-          <h3>Сувениры</h3>
-          <p>Не только китайского, но и местного производства!</p>
-        </li>
-        <div class="feature-img-2">
-          <img src="img/sedona-2.jpg" width="800" height="256" class="feature-img-2" alt="Мост дьявола">
-        </div>
-        <li class="feature-item standout-feature-item feature-item-2">
-          <h3>Там есть мост дявола</h3>
-          <p>—№2—</p>
-          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-
+        <li class="feature-item  feature-item-2">
+          <div class="feature-img-2">
+            <img src="img/sedona-2.jpg" width="800" height="256" class="feature-img-2" alt="Мост дьявола">
+          </div>
+          <div class="standout-feature-item standout-feature-item-2">
+            <h3>Там есть мост дявола</h3>
+            <p>—№2—</p>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
         </li>
         <li class="feature-item feature-item-gray feature-item-3">
           <h3>Небольшая площадь</h3>
@@ -91,7 +97,7 @@
     </section>
   </main>
 
-  <footer class="main-footer container">
+  <footer class="main-footer">
     <section class="footer-contacts">
       <h2>Контактная информация</h2>
       <p><a class="footer-tag" href="#">#visitSEDONA</a></p>
