@@ -459,12 +459,15 @@ a {
 
 .catalog {
   display: grid;
-  grid-template-rows: 1fr 5fr;
+  grid-template-rows: 87px 1fr;
 }
+
 
 .search-results {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: max-content 1fr min-content;
+  grid-gap: 46px;
+  height: 87px;
 }
 
 .sort-inversion {
@@ -483,19 +486,29 @@ a {
   display: inline;
 }
 
+.sorting {
+  justify-self: start;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+
 .sorting p {
   font-size: 12px;
   line-height: 18px;
+  margin: 0;
 }
 
 .sorting-list {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  display: grid;
+  margin:0;
+  padding:0;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
 }
 
 .sorting-list li {
-  display: inline;
+ 
 }
 
 .sorting-list a {
@@ -535,10 +548,45 @@ a {
 
 .rating-star {
   color: var(--basic-blue);
+  text-align: right;
 }
 
 .catalog-list {
   list-style: none;
+  display: grid;
+  padding: 0;
+  margin: 0;
+  grid-template-rows: 150px 150px 150px;
+}
+
+.catalog-item-1 {
+  display: grid;
+  grid-template-columns: 135px 1fr 1fr;
+  grid-template-rows: 150px;
+}
+
+.catalog-item-2 {
+  display: grid;
+  grid-template-columns: 135px 1fr 1fr;
+}
+
+.catalog-item-3 {
+  display: grid;
+  grid-template-columns: 135px 1fr 1fr;
+}
+
+.catalog-item-img {
+  padding-top: 30px;
+}
+
+.catalog-item-info {
+  margin-left: 29px;
+  padding-top: 23.5px;
+}
+
+.rating-info {
+  justify-self: end;
+  padding-top: 29.5px;
 }
 
 .catalog-item p {
@@ -555,6 +603,10 @@ a {
   color: var(--basic-black);
 }
 
+.lodging-name h3 {
+  margin: 0;
+}
+
 .lodging-name:hover {
   color: var(--basic-blue);
 }
@@ -567,7 +619,9 @@ a {
   color: var(--basic-white);
   background-color: var(--basic-brown);
   font-weight: bold;
-  padding: 5px;
+  padding: 3px;
+  padding-left: 16px;
+  padding-right: 17px;
 }
 
 .catalog-reservation:hover {
@@ -583,7 +637,9 @@ a {
   color: var(--basic-white);
   background-color: var(--basic-blue);
   font-weight: bold;
-  padding: 5px;
+  padding: 3px;
+  padding-left: 17px;
+  padding-right: 16px;
 }
 
 .catalog-detail:hover {
