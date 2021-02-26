@@ -51,8 +51,6 @@
 
   min-height: 100%;
   display: grid;
-  grid-template-columns: 
-    ;
   grid-template-rows: 
     min-content
     1fr
@@ -77,44 +75,46 @@ a {
 }
 
 .feature-item-1 {
-  grid-area: f1;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 256px 330px;
+}
+
+.feature-item-2 {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  padding: 0;
+}
+
+
+.standout-feature-item-1 {
+  grid-column: 1/2;
+}
+
+.standout-feature-item-2 {
+  grid-column: 3/4;
 }
 
 .feature-img-1 {
   grid-column: 2/4;
-  grid-area img1;
-}
-
-.recommendation-item-1 {
-  grid-area: r1;
-}
-
-.recommendation-item-2 {
-  grid-area: r2;
-}
-
-.recommendation-item-3 {
-  grid-area: r3;
-}
-
-.feature-item-2 {
-  grid-area: f2;
 }
 
 .feature-img-2 {
-  grid-area: img2;
+  grid-column: 1/3;
 }
 
 .feature-item-3 {
-  grid-area: f3;
+  grid-column: 1/2;
 }
 
 .feature-item-4 {
-  grid-area: f4;
+  grid-column: 2/3;
 }
 
 .feature-item-5 {
-  grid-area: f5;
+  grid-column: 3/4;
 }
 
 /*Main header*/
@@ -165,7 +165,7 @@ a {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0;
 }
 
 /*Logo*/
@@ -219,13 +219,21 @@ a {
   margin-top: 51px;
   padding: 0;
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows:  256px 330px 256px 256px;
-  grid-template-areas: 
-  "f1 img1 img1"
-  "r1 r2 r3"
-  "img2 img2 f2"
-  "f3 f4 f5";
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 586px 256px 256px;
+}
+
+.features-nested-list {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 330px;
+  grid-column: 1/4;
+  list-style: none;
+  padding: 0;
+}
+
+.feature-item-2 {
+  grid-column: 1/4;
 }
 
 .feature-img-1 img{
@@ -247,8 +255,10 @@ a {
 }
 
 .feature-item {
-  padding: 47px;
+  display: grid;
 }
+
+
 
 .feature-item,
 .recommendation-item {
@@ -274,7 +284,6 @@ a {
 
 .recommendation-item {
   background-color: var(--basic-white);
-  padding: 47px;
 }
 
 .feature-item-gray {
@@ -326,9 +335,7 @@ a {
 .main-footer {
   background: var(--white-more-opacity);
   display: grid;
-  grid-template-columns: 33% 33% 33%;
-  margin-top: 50px;
-  grid-gap: 20px;
+  grid-template-columns: 400px 400px 400px;
 }
 
 .footer-contacts {
