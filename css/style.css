@@ -67,6 +67,18 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 /*Grid*/
 
@@ -387,9 +399,26 @@ a {
 /*section filters*/
 
 .filters {
+  margin-bottom: 30px;
+}
+
+.filter {
   background: var(--basic-blue);
   width: 1200px;
   color: var(--basic-white);
+  display: grid;
+  grid-template-columns: 300px 300px 600px;
+  grid-template-rows: 217px;
+  background-image: url(../img/catalog/background.jpg);
+  background-size: cover;
+}
+
+.filter fieldset {
+  border: 0 none;
+} 
+
+.filter legend {
+  padding-top: 26.5px;
 }
 
 .filters ul {
@@ -400,6 +429,18 @@ a {
   font-size: 16px;
   line-height: 21px;
   font-weight: bold;
+}
+
+.infrastructure {
+  
+}
+
+.h-type {
+  
+}
+
+.price {
+  justify-self: end;
 }
 
 .filter-search-button {
@@ -416,43 +457,69 @@ a {
 
 /*section catalog*/
 
+.catalog {
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+}
+
+.search-results {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.sort-inversion {
+  justify-self: end;
+  margin: 0;
+}
+
 .sorting-subtitle {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
 }
 
-.sorting-p {
+.sorting-subtitle p {
+  margin: 0;
+  display: inline;
+}
+
+.sorting p {
   font-size: 12px;
   line-height: 18px;
 }
 
-.sorting {
+.sorting-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.sorting a {
+.sorting-list li {
+  display: inline;
+}
+
+.sorting-list a {
   font-size: 12px;
   line-height: 18px;
   color: var(--black-opacity);
   border-bottom: 1px dashed var(--basic-blue);
 }
 
-.sorting a:hover {
+.sorting-list a:hover {
   color: var(--basic-blue);
 }
 
-.sorting a:focus {
+.sorting-list a:focus {
   color: var(--basic-blue);
   border: none;
 }
 
-.sorting a:active {
+.sorting-list a:active {
   color: var(--basic-black);
   border: none;
 }
 
-.sorting .current-sort {
+.sorting-list .current-sort {
   color: var(--basic-blue);
   border: none;
 }

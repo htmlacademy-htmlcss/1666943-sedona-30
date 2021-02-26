@@ -11,7 +11,7 @@
   <title>Sedona</title>
 </head>
 
-<body class="page-body">
+<body class="page-body container">
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
@@ -25,12 +25,12 @@
       </ul>
     </nav>
   </header>
-  <main Class="page-catalog conteiner">
+  <main class="page-catalog">
     <h1>Поиск жилья</h1>
     <section class="filters">
       <h2>Фильтр жилья</h2>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset>
+        <fieldset class="infrastructure">
           <legend>Инфраструктура:</legend>
           <ul>
             <li class="filter-option filter-checkbox">
@@ -47,7 +47,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="h-type">
           <legend>Тип жилья:</legend>
           <ul>
             <li class="filter-option filter-checkbox">
@@ -64,7 +64,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="price">
           <legend>Стоимость в сутки (Р):</legend>
           <label>От<input type="text" name="from"></label>
           <label>До<input type="text" name="to"></label>
@@ -74,16 +74,24 @@
       </form>
     </section>
     <section class="catalog">
-      <h2>Список доступного жилья</h2>
-      <p class="sorting-subtitle">Найдено: 3</p>
-      <p class="sorting-p">Сортировка:</p>
-      <ul class="sorting">
-        <li><a href="#" class="current-sort">По цене</a></li>
-        <li><a href="#">По типу:</a></li>
-        <li><a href="#">По рейтингу:</a></li>
-      </ul>
-      <a href="#">Up</a>
-      <a href="#">Down</a>
+      <div class="search-results">
+        <h2 class="visually-hidden">Список доступного жилья</h2>
+        <div class="sorting-subtitle">
+          <p>Найдено: 3</p>
+        </div>
+        <div class="sorting">
+          <p >Сортировка:</p>
+          <ul class="sorting-list">
+            <li><a href="#" class="current-sort">По цене</a></li>
+            <li><a href="#">По типу:</a></li>
+            <li><a href="#">По рейтингу:</a></li>
+          </ul>
+        </div>
+        <div class="sort-inversion">
+          <a href="#">Up</a>
+          <a href="#">Down</a>
+        </div>
+      </div>
       <ul class="catalog-list">
         <li class="catalog-item">
           <a class="lodging-name" href="#">
