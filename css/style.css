@@ -138,17 +138,18 @@ a {
 /*Main navigation*/
 
 .main-navigation {
-  display: grid;
   background-color: var(--basic-white);
 }
 
 .site-navigation {
+  display: flex;
   font-size: 14px;
   line-height: 26px;
   list-style: none;
   font-weight: bold;
   padding: 0;
   margin: 0;
+  justify-content: space-around;
 }
 
 .site-navigation li {
@@ -187,13 +188,13 @@ a {
 }
 
 .main-navigation-wrapper {
-  display: grid;
   padding: 0 auto;
-  margin: 0 10px;
+  margin: 0;
+  flex-wrap: wrap;
 }
 
+
 .main-header-logo {
-  justify-self: center;
 }
 
 /*Main welcome*/
@@ -242,6 +243,7 @@ a {
   grid-column: 1/4;
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .feature-item-2 {
@@ -330,6 +332,7 @@ a {
   width: 568px;
   height: 86px;
   margin-top: 30px;
+  border: 0;
 }
 
 .button-search:hover {
@@ -340,6 +343,92 @@ a {
 .button-search:active  {
   color: var(--white-opacity);
   background-color: var(--basic-extra-brown);
+}
+
+.hotel-search {
+  padding-top: 55px;
+}
+
+.hotel-search-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hotel-search-item {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.hotel-search-item:nth-child(3) {
+ margin-right: 53px;
+}
+
+.hotel-search-item:nth-child(4) {
+  
+}
+
+.hotel-search-item label {
+  margin-right: 20px;
+  align-self: center;
+}
+
+.index-input {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  background: var(--basic-extra-gray);
+  border: 0;
+}
+
+.index-input-text {
+  width: 346px;
+  height: 38px;
+  padding-left: 13px;
+}
+
+.index-input-number {
+  width: 114px;
+  height: 38px;
+  text-align: center;
+}
+
+
+.pop-ap {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  margin: 0 auto;
+  padding: 0;
+  width: 568px;
+  height: 395px;
+}
+
+.filter-index-button {
+  margin: 0;
+  padding: 0;
+  background: var(--basic-blue);
+  width: 458px;
+  height: 58px;
+  color: var(--basic-white);
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  border: 0;
+  text-transform: uppercase;
+}
+
+.filter-index-button:hover {
+  background: var(--basic-dark-blue);
+}
+
+.filter-index-button:active {
+  background: var(--basic-extra-blue);
+  color: var(--white-opacity);
 }
 
 /*Main footer*/
@@ -650,3 +739,5 @@ a {
   color: var(--white-opacity);
   background-color: var(--basic-extra-blue);
 }
+
+/*Experiment*/

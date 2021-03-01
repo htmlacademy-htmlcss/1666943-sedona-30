@@ -33,7 +33,7 @@
       <div class="main-welcome">
         <img src="img/welcome.svg" width="456" height="350" alt="Добро пожаловать в Седону!">
       </div>
-      <h1>Туристический город Sedona</h1>
+      <h1 class="visually-hidden">Туристический город Sedona</h1>
       <p class="welcome-p">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
       <section class="features">
         <h2>Преимущества</h2>
@@ -91,10 +91,33 @@
         </ul>
       </section>
       <section class="search">
-        <h2>Поиск гостиницы</h2>
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
         <p class="subtitle">Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки, мы покажем Вам лучшие предложения гостиниц в Седоне</p>
         <button class="button-search" type="button">Поиск гостиницы в Седоне</button>
+        <div class="pop-ap">
+          <form class="hotel-search" method="get" action="https://echo.htmlacademy.ru">
+            <ul class="hotel-search-list">
+              <li class="hotel-search-item">
+                <label for="arrival-date-search">Дата заезда:</label>
+                <input type="text" name="arrival-date" id="arrival-date-search" class="index-input index-input-text" value="24 апреля 2017">
+              </li>
+              <li class="hotel-search-item">
+                <label for="leaving-date-search">Дата выезда:</label>
+                <input type="text" name="date-of-leaving" id="leaving-date-search" class="index-input index-input-text" value="4 июля 2017">
+              </li>
+              <li class="hotel-search-item">
+                <label for="adult-number">Взрослые:</label>
+                <input type="number" name="amount-of-adult" id="adult-number" class="index-input index-input-number" value="2">
+              </li>
+              <li class="hotel-search-item">
+                <label for="children-number">Дети:</label>
+                <input type="number" name="amount-of-children" id="children-number" class="index-input index-input-number" value="0">
+              </li>
+            </ul>
+            <button class="filter-index-button" type="submit">Найти</button>
+          </form>
+        </div>
       </section>
     </main>
 
