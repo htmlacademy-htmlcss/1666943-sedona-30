@@ -904,7 +904,7 @@ a {
   left: 0;
   width: 2px;
   height: 22px;
-  background-color: #fff;
+  background-color: var(--basic-white);
 }
 
 .input-catalog {
@@ -915,7 +915,7 @@ a {
   padding: 0;
   margin: 0;
   border: 0;
-  color: #fff;
+  color: var(--basic-white);
   width: 30px;
 }
 
@@ -940,7 +940,7 @@ a {
 .bar {
   width: 80%;
   height: 100%;
-  background-color: #fff;
+  background-color: var(--basic-white);
 }
 
 .toggle {
@@ -948,10 +948,10 @@ a {
   display: block;
   top: 50%;
   left: 0;
-  width: 2px;
-  height: 2px;
+  width: 4px;
+  height: 4px;
   transform: translateY(-50%);
-  border: 9px solid #fff;
+  border: 8px solid #fff;
   background-color: #ababab;
   border-radius: 50%;
   box-shadow: 0 2px 0 0 rgba(171, 171, 171, 0.3);
@@ -960,9 +960,7 @@ a {
 }
 
 .toggle:hover {
-  width: 3px;
-  height: 3px;
-  border-width: 9px;
+  transform: scale(1.2, 1.1) translateY(-45%);
 }
 
 .toggle-max {
@@ -1164,6 +1162,11 @@ sort-button path {
 
 .house-type {
   width: 116px;
+  color: var(--basic-black-gray);
+}
+
+.price-from {
+  color: var(--basic-black-gray);
 }
 
 .rating-info {
@@ -1175,10 +1178,6 @@ sort-button path {
 
 .rating-info p {
   margin: 0;
-}
-
-.catalog-item p {
-  color: var(--basic-black-gray);
 }
 
 .catalog-item h3 {
