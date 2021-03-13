@@ -286,7 +286,7 @@ a {
 .features {
   text-align: center;
   color: var(--basic-black-gray);
-  margin-bottom: 58px;
+  margin-bottom: 54px;
 }
 
 .features-list {
@@ -337,7 +337,7 @@ a {
 
 .feature-item p:first-of-type {
   margin-top: 25px;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
 }
 
 .standout-feature-item h3 {
@@ -363,7 +363,7 @@ a {
 
 .standout-feature-item h3 {
   color: var(--basic-white);
-  padding: 50px 125px 0 125px;
+  padding: 48px 125px 0 125px;
 }
 
 .standout-feature-item p {
@@ -413,13 +413,13 @@ a {
   content: "";
   display: block;
   position: absolute;
-  top: 60px;
+  top: 55px;
   left: 50%;
   margin-left: -38px;
   width: 75px;
-  height: 72px;
+  height: 77px;
   background: url(../img/icons/icon-3.svg) no-repeat top center;
-  background-size: 75px 72px;
+  background-size: 75px 77px;
 }
 
 .feature-item-gray {
@@ -438,10 +438,11 @@ a {
 }
 
 .subtitle {
+  margin-top: 0;
   font-size: 30px;
   line-height: 24px;
   font-weight: bold;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
   padding-right: 10px;
 }
 
@@ -1030,6 +1031,8 @@ button.minus {
 .current-sort-innversion path {
   fill: var(--basic-blue);
 }
+
+
 .sorting-subtitle {
   font-size: 21px;
   line-height: 26px;
