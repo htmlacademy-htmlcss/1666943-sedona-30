@@ -225,7 +225,7 @@ a {
 }
 
 .main-navigation-wrapper {
-  padding: 0 auto;
+  padding: 0;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -1048,6 +1048,7 @@ button.minus {
 .sorting {
   display: flex;
   flex-wrap: wrap;
+  align-items: baseline;
 }
 
 .sorting p {
@@ -1062,7 +1063,6 @@ button.minus {
   display: flex;
   margin:0;
   padding:0;
-  justify-content: baseline;
   flex-wrap: wrap;
 }
 
